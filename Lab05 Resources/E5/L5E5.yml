@@ -1,0 +1,20 @@
+# L5E5.yml
+apiVersion: apps/v1    
+kind: Deployment       
+metadata:
+  name: antje12-l5e4
+spec:
+  selector:
+    matchLabels:       
+      component: antje12-l5e4
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        component: antje12-l5e4
+    spec:
+      containers:
+        - name: spekt8
+          image: ahmadhamid/spekt8
+          ports:
+            - containerPort: 3000

@@ -1,0 +1,34 @@
+anton@anton-laptop:~/Dropbox/SDU/Code/Linux/OWD - Server/Lab07 Resources/Resources/L7E2$ fio fio-seq-write.fio
+file1: (g=0): rw=write, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=libaio, iodepth=16
+fio-3.16
+Starting 1 process
+file1: Laying out IO file (1 file / 10240MiB)
+Jobs: 1 (f=1): [W(1)][100.0%][w=21.7MiB/s][w=5543 IOPS][eta 00m:00s]
+file1: (groupid=0, jobs=1): err= 0: pid=8739: Thu Oct 29 16:55:55 2020
+  write: IOPS=4833, BW=18.9MiB/s (19.8MB/s)(2266MiB/120003msec); 0 zone resets
+    slat (usec): min=3, max=3223, avg=28.36, stdev=13.60
+    clat (usec): min=197, max=781618, avg=3278.98, stdev=10551.34
+     lat (usec): min=233, max=781651, avg=3307.61, stdev=10551.16
+    clat percentiles (usec):
+     |  1.00th=[  1598],  5.00th=[  2409], 10.00th=[  2442], 20.00th=[  2507],
+     | 30.00th=[  2540], 40.00th=[  2606], 50.00th=[  2671], 60.00th=[  2835],
+     | 70.00th=[  3032], 80.00th=[  3195], 90.00th=[  3523], 95.00th=[  4113],
+     | 99.00th=[  5800], 99.50th=[  6718], 99.90th=[110625], 99.95th=[217056],
+     | 99.99th=[509608]
+   bw (  KiB/s): min=  127, max=27600, per=100.00%, avg=19413.73, stdev=5185.02, samples=239
+   iops        : min=   31, max= 6900, avg=4853.43, stdev=1296.27, samples=239
+  lat (usec)   : 250=0.01%, 500=0.02%, 750=0.02%, 1000=0.02%
+  lat (msec)   : 2=2.13%, 4=92.43%, 10=4.98%, 20=0.09%, 50=0.10%
+  lat (msec)   : 100=0.09%, 250=0.07%, 500=0.03%, 750=0.01%, 1000=0.01%
+  cpu          : usr=5.13%, sys=20.62%, ctx=572654, majf=0, minf=12
+  IO depths    : 1=0.1%, 2=0.1%, 4=0.1%, 8=0.1%, 16=100.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.1%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=0,580041,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=16
+
+Run status group 0 (all jobs):
+  WRITE: bw=18.9MiB/s (19.8MB/s), 18.9MiB/s-18.9MiB/s (19.8MB/s-19.8MB/s), io=2266MiB (2376MB), run=120003-120003msec
+
+Disk stats (read/write):
+  sda: ios=3/578586, merge=0/1934, ticks=1012/1791955, in_queue=252528, util=88.76%

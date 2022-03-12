@@ -1,0 +1,15 @@
+Testet på HDD!
+Block size sat i config fil til 4 KB: bs=4K
+
+fio rand read:
+block size: bs=(R) 4096B-4096B
+iops: avg=82.72
+read xpeed: IOPS * block size = speed (MiB/s)
+4.096 * 82.72 = 338.82 (MiB/s)
+
+fio seq read:
+block size: bs=(R) 4096B-4096B
+iops: avg=4853.43
+read xpeed: IOPS * block size = speed (MiB/s)
+4.096 * 4853.43 = 19879.65 (MiB/s)
+

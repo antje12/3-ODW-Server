@@ -1,0 +1,9 @@
+My app:
+https://developers.facebook.com/apps/618145455757977/dashboard/
+
+Graph API Explorer
+https://developers.facebook.com/tools/explorer/?method=GET&path=me%3Ffields%3Did%2Cname%2Cbirthday&version=v8.0
+
+Curl request to REST API
+curl -H "Authorization: Bearer EAAIyMzRPWpkBAG9cfdxd20VZCKYBM1q6RPAVxdx3CDj8PxiXFCAV5G2o98IXxQJoPND1b1bM5U5LyNsP0Njyv10CTDASzcMoN8pnLYScwN4a4o5f6dmJnZAUoB8ZCAS8xZCjTOmyZAkhZCz3QRDHMjsCdn7rrLTvqEktFA3WrdRo1ieuJWbPGFXjIqDDbKsJ4YAh1Ag2nT5qMZBSEy0ZBAx6xAo0V6fpxgfiZBjDgm8lZBBAZDZD" https://graph.facebook.com/v8.0/me?fields=id,name,birthday
+

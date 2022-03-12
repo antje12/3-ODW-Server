@@ -1,0 +1,3 @@
+
+# use specific config
+kubectl --kubeconfig ~/.kube/odw-config get nodes
