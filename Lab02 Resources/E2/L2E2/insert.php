@@ -1,38 +1,1 @@
-<?php
-include("config.php");
-	
-if(isset($_POST['name']) && isset($_POST['address'])){
-	// Create connection
-	$conn = new mysqli($servername, $username, $password, $dbname);
-	
-	// Check connection
-	if ($conn->connect_error) {
-	    die("Connection failed: " . $conn->connect_error);
-	}
-	
-	// prepare and bind
-	$stmt = $conn->prepare("INSERT INTO abooktable (name, address) VALUES (?, ?)");
-	$stmt->bind_param("ss", $name, $address);
-	
-	$name = $_POST['name'];
-	$address = $_POST['address'];
-	$stmt->execute();
-	
-	$stmt->close();
-	$conn->close();
-
-	echo "Inserted: $name";
-}
-?>
-
-<h2>Address book submission form</h2>
-<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-  Name: <input type="text" name="name" value=""><br><br>
-  Address: <input type="text" name="address" value=""><br><br>
-  <input type="submit" name="submit" value="Submit">
-</form>
-
-
-<br>
-<a href="/select.php">click to see addressbook</a>
-
+/¿œ__^ßq%K°).gBsšënt{ıáÂå'¸<À7ºø<òs5l&G­Bè&qÿUĞì€¡Fª†À”ò¤Îl;Ààºc(‰›²¡Ëš^”dİì+§ÀI'h57qÀ4‚¢Üáœ`³³ğ¼´ºKiÜJ>Ïü*ÃÔiŠÇ :ÙL|•ÑLß–[Ì&Ò{ç„1¯§l@ûj‡Á”¢íÜ%må—½hÂv²µ?¦MPëpÇ[z»¦ÜÖÕHÿx?#Óvl¾ĞÖänKÁèúúòËÍíõÍÅíè÷aSÃ¶LÖV^AØû·;9ödSõÂ…¶=x‹ã	•á.@©ßZœg((°W¦è[³MãOÉslÛ:á÷!ÈpE–"Ö3ú2ãtsi Äõ<¸˜İ2—×MYöÛ;ñ_~Ò·|§q?Şd—;hÔ{‘ÅdgŸ¯1ÙçVêdú´Ïœjñ7¯ªdà‡À~V«èæÏe†nˆğçMÍ@Ä7+=Éxv>zÿñâËÇ÷ŸşbNRÜŞ õA;8€ÏŸ?Ã>\±Õ˜ÓŠŒ×"‰!ÎÊëµ¹Ó„rà8ƒW¯¼‘Y ;œKŠm1ù}±®GµEˆPÈ¢ãJ·´)Œ.¹ñ„Ä“ÙE1Ú­¿__•Cş	O|!ÿOÁôÔ|í5ÂÊ®;BÂ}'}ÜÀ›á=­F¼-ºÅÖ0wùìv¢g	!óíÒj§¼Ğ(ã2ŠïaÇ,·ÒKjÜ $3ëW˜â…%xK£Ş­ò{÷–b¾ÈÉak°o?àL’vëX(³˜^/ÍZîZÇDÏlë®C¾pö%YKpeôë»"ÇDRê“)š£‚İ"f<úÆãİA6åy²êİ^GYğVL‰7ÿ›ğ^^¤Z®Ö\É8¡ûz·¿Ğœà6Úw‘9!¯¢$ôç˜)ádØ™†æÉ7WOG/aä»‘6Z¢úÆWİôíCÊË"\Äà_bIAì°ÑOßÈ_a®,İlh=#7ÚI‚ëÈxÇfudMÌ¾òBFNgª˜ŒèÏ¦ÊÉÇÍ¤rÙuëĞ\F[¼Ï-ÙÜ»±}y¶à–½¥Òcdo¿%Õ[^%º´¯·Ç†÷Ş½åU¿¡ôÉª»Ööûq×™µŒzàôè—Ô¢_ÁšNŒµMşñõã~“]¿Çñƒ‘V´ºwãdÇç~«}	‚Ä[eÇV°ÍİÆ!Ü2ö›o6ÉÅØÎ©0tå?Õ¹ÄçY’póşÚ}ÙE©ı­|+CËªÂ"5ÿù"èWû
