@@ -1,27 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <relativePath>../poms/compiled/</relativePath>
-        <groupId>dk.sdu.mmmi.build</groupId>
-        <artifactId>compiled-bundle-settings</artifactId>
-        <version>1.0-SNAPSHOT</version>
-    </parent>
-
-    <groupId>dk.sdu.mmmi</groupId>
-    <artifactId>Nails</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <packaging>bundle</packaging>
-
-    <name>WeaponNails</name>
-
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <bundle.symbolicName>dk.sdu.mmmi.nails</bundle.symbolicName>
-        <bundle.namespace>dk.sdu.mmmi</bundle.namespace>
-    </properties>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.osgi</groupId>
-            <artif
+-----BEGIN CERTIFICATE REQUEST-----
+MIICxzCCAa8CAQAwgYExCzAJBgNVBAYTAkRLMQwwCgYDVQQIDANGeW4xDzANBgNV
+BAcMBk9kZW5zZTEMMAoGA1UECgwDU0RVMQwwCgYDVQQLDANPRFcxEDAOBgNVBAMM
+B2FudGplMTIxJTAjBgkqhkiG9w0BCQEWFmFudGplMTJAc3R1ZGVudC5zZHUuZGsw
+ggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC6q3G0jbo5ttNDptcodc1M
+UtGK/EWvysPnQdOoxAF0kCl56UjVnc4/PW1dPC5ybYLCPfl4y8iWImkpH1ylyDVK
+IwheB7WtL7efiB+haaj3FKXJWQsLQSvVVc6RaQOGplX5H8tzuXisfJICCW429rHb
+KOQSVZAf1xU8IUXncRSCDKvBIgkIj36/Mx+TFM3xv1uFV0wNFJV/taPH7FjukbaN
+JjHUV36UQePZYSSZ7RWk6qZR73gI8csvMnvEdC3gtUUr/FpwKwbDWGFQwKGFpYfo
+zHSwA4q/hgf3qWEp1UUuAv6mDFvjcdbF4ef/zvkKgQIAl27KxuOstTBwHrFbTwKL
+AgMBAAGgADANBgkqhkiG9w0BAQsFAAOCAQEAWtKk84RTwPRruhxwmm4EoWDfkLgr
+JvVE+CP43SPmWwIGMsYlHECa2wXtu5U0J3LssD75HQW/nDCujRfI2tGpsGpfEA/e
+B40iMb5vT+SD1ZWtfwJgtLxiNoTCTOHCsIbkFtNhp7Sn6XSXPAZLBHtulu32uk1X
+wcgSpRxxjdln3qTFjTFnzvakXw1UZ43yWAKc/QGBixxJOSETkuB0LOpnj8y9bik6
+HI5y5FbYNckn+t+2Dh3QVef5LgghPDMDxpAq7dSMid0uuBtI+t2KWDuHauqtISKK
+5ifa1vw9bNkm3Pi7tjiPPElfrS2qWMcTeKTzY6DVLdcpT5ioSGbL5byBfw==
+-----END CERTIFICATE REQUEST-----

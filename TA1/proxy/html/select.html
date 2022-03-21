@@ -1,21 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <relativePath>../poms/compiled/</relativePath>
-        <groupId>dk.sdu.mmmi.build</groupId>
-        <artifactId>compiled-bundle-settings</artifactId>
-        <version>1.0-SNAPSHOT</version>
-    </parent>
-
-    <groupId>dk.sdu.mmmi</groupId>
-    <artifactId>WeaponPan</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <packaging>bundle</packaging>
-
-    <name>WeaponPan</name>
-
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <bundle.symbolicName>dk.sdu.mmmi.weapon</bundle.symbolicName>
-        <bu
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $.getJSON('/persons', function(data) {
+                var table = '<table border="1">';
+                /* loop over each object in the array to create rows*/
+                $.each(data, function(index, item) {
+                    /* add to html string started above*/
+                    table += '<tr><td>' + item.PersonID + '</td><td>' + item.Firstname + '</td><td>' + item.Lastname + '</td></tr>';
+                });
+                table += '</table>';
+                console.log("ookok");
+                /* insert the html string*/
+                $("#content").html(table);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="content"></div>
+</body>
+</html>

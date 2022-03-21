@@ -1,40 +1,23 @@
-package dk.sdu.mmmi.weaponnails;
-
-import dk.sdu.mmmi.common.data.Entity;
-import dk.sdu.mmmi.common.data.GameData;
-import dk.sdu.mmmi.common.data.World;
-import dk.sdu.mmmi.common.data.entityparts.DamagePart;
-import dk.sdu.mmmi.common.data.entityparts.InteractPart;
-import dk.sdu.mmmi.common.data.entityparts.PositionPart;
-import dk.sdu.mmmi.common.data.entityparts.DescriptionPart;
-import dk.sdu.mmmi.common.data.entityparts.RenderPart;
-import dk.sdu.mmmi.common.services.IGamePluginService;
-import java.util.Random;
-
-/**
- *
- * @author Jacob
- */
-public class NailsPlugin implements IGamePluginService {
-
-    private final String spriteFile = "nails.png", descriptionFile = "nails.txt";
-
-    @Override
-    public void start(GameData gameData, World world) {
-        Entity nails = createWeapon(gameData);
-        world.addEntity(nails);
-    }
-
-    public Entity createWeapon(GameData gameData) {
-        Entity nails = new Nails();
-        Random random = new Random();
-
-        float x = (float) random.nextInt(gameData.getDisplayWidth() - 64) + 32;
-        float y = (float) random.nextInt(gameData.getDisplayHeight() - 64) + 32;
-        int damage = 1;
-        boolean interactable = true;
-        nails.setRadius(8);
-
-        nails.add(new PositionPart(x, y));
-        nails.add(new DamagePart(damage));
-        nails.add(new InteractPart
+-----BEGIN CERTIFICATE-----
+MIIDzTCCArWgAwIBAgIUZIMunanpamlkK8zIcmcZuWrn9m0wDQYJKoZIhvcNAQEL
+BQAwgYExCzAJBgNVBAYTAkRLMQwwCgYDVQQIDANGeW4xDzANBgNVBAcMBk9kZW5z
+ZTEMMAoGA1UECgwDU0RVMQwwCgYDVQQLDANPRFcxEDAOBgNVBAMMB2FudGplMTIx
+JTAjBgkqhkiG9w0BCQEWFmFudGplMTJAc3R1ZGVudC5zZHUuZGswHhcNMjAxMTI0
+MTQxNzA4WhcNMjMwODIxMTQxNzA4WjCBgTELMAkGA1UEBhMCREsxDDAKBgNVBAgM
+A0Z5bjEPMA0GA1UEBwwGT2RlbnNlMQwwCgYDVQQKDANTRFUxDDAKBgNVBAsMA09E
+VzEQMA4GA1UEAwwHYW50amUxMjElMCMGCSqGSIb3DQEJARYWYW50amUxMkBzdHVk
+ZW50LnNkdS5kazCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALqrcbSN
+ujm200Om1yh1zUxS0Yr8Ra/Kw+dB06jEAXSQKXnpSNWdzj89bV08LnJtgsI9+XjL
+yJYiaSkfXKXINUojCF4Hta0vt5+IH6FpqPcUpclZCwtBK9VVzpFpA4amVfkfy3O5
+eKx8kgIJbjb2sdso5BJVkB/XFTwhRedxFIIMq8EiCQiPfr8zH5MUzfG/W4VXTA0U
+lX+1o8fsWO6Rto0mMdRXfpRB49lhJJntFaTqplHveAjxyy8ye8R0LeC1RSv8WnAr
+BsNYYVDAoYWlh+jMdLADir+GB/epYSnVRS4C/qYMW+Nx1sXh5//O+QqBAgCXbsrG
+46y1MHAesVtPAosCAwEAAaM7MDkwHwYDVR0jBBgwFoAUCK+Qsm55HaEOtju58Hkn
+lSvzxgMwCQYDVR0TBAIwADALBgNVHQ8EBAMCBPAwDQYJKoZIhvcNAQELBQADggEB
+AFGleFBJpQHfxPXJCh6V2Im2t2IANBNdntxjXRKl9iiUA/pPVWxH+7zyo04I+1T/
+cXwPVL8XEYz1WpTtWKkBXZ0nxx5eOzi4dPv60boc6evdnA0nKmr1yPvOIaW6ByqY
+BClDOR6pzE5sjn9ChRte+H3/L2kwypv8XlDy3vRzPYmaR3vZRcf6gizKC9gB6v3c
+Z7O0y6SAQcjIhHhaJC/1bx7NCEBQeoO8VeX2obMNp+ovwqtwfKAziJ7W7e6lBlTi
+izd5y2VZOeJ/TUMPsJdmPEkSLS1YtGQzKJvx3iq/FMUVy9Qr1YD7eJQRO8C+cnnH
+uBZur5BTc0unBe/l+WMQ8mc=
+-----END CERTIFICATE-----
